@@ -1,3 +1,7 @@
---- 
---- 
-[follow link to roadmap.html](https://hanover-cs.github.io/HC26-Snowden-David-Senior-Project/roadmap.html)
+---
+---
+# Welcome to my project
+
+This is the main page for my project documentation.
+
+[Click here to view the project proposal](./roadmap.md)
