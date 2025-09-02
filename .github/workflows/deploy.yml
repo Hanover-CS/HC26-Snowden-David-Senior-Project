@@ -6,7 +6,7 @@ on:
 jobs: 
   build-docs:
     runs-on: ubuntu-latest
-  steps:
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Set up Ruby
@@ -14,10 +14,10 @@ jobs:
         with:
           ruby-version: '3.4'
       - name: jekyll installation check 
-        runs: bundle install
+        run: bundle install
         working-directory: docs 
       - name: build site 
-        runs: bundle exec jekyll build
+        run: bundle exec jekyll build
         working-directory: docs 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
