@@ -1,4 +1,6 @@
 ---
+title: "proposal Draft" 
+layout: default
 ---
 # **EduRate: My Web Application to make students Informed**
 - The goal of this project is to create a functional web application for my fellow students to further inform them  about suggested or disapproved courses and professors.
