@@ -1,8 +1,7 @@
 plugins: 
   - jekyll-relative-links 
+  - jekyll-remote-theme
 lsi: false
-safe: true
-source: [your repo's top level directory]
 incremental: false
 highlighter: rouge
 gist:
@@ -10,4 +9,4 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-
+remote_theme: pages-themes/cayman@v0.2.0
