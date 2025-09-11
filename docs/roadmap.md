@@ -1,58 +1,120 @@
 ---
-title: "proposal Draft" 
+title: "EduRate: A Web App for Fair Course Reviews"
 layout: default
 ---
-# **EduRate: My Web Application to make students Informed**
-- The goal of this project is to create a functional web application for my fellow students to further inform them  about suggested or disapproved courses and professors.
-  In order to inforce the integrity of the web application a review will be automatically generated for courses and professors based on the scores of an assigned survery. This allows the students to still find the nesscary knowledge they need to make a informed decision on there schedules without spreading hate about our facilty.
 
-## **Key Capabilites**
-- Survey-Based Feedback: Students rate courses and professors using structured surveys instead of writing free-form reviews.
+# **EduRate: A Web App for Fair Course Reviews**
 
-- Auto-Generated Reviews: The system analyzes survey results to automatically generate clear, neutral summaries.
+EduRate is a structured, survey-based web application that enables students to make informed decisions when selecting courses and professors. Unlike existing platforms that rely on free-form user input—which can often lead to biased, inflammatory, or misleading reviews—EduRate replaces open-ended feedback with guided surveys. These surveys are then analyzed to automatically generate neutral, data-driven summaries for each course or professor.
 
-- Upvoting System: Reviews can be upvoted, helping highlight the most credible and helpful feedback.
-
-- Integrity Focused: Prevents hate speech or personal attacks by removing open-ended review submissions.
-
-- Course & Professor Lookup: Students can easily browse or search for reviews before registering.
+The goal is to provide a system that balances transparency and helpfulness with fairness and professionalism, while protecting faculty from unfair attacks.
 
 ---
 
-## Annotated Bibliography
+## **Platform Target and Technologies**
 
-### 1. RateMyProfessors
+EduRate will be developed as a **Web Application**, allowing easy access across devices including desktop and mobile via browser.
 
-- **Link:** [https://www.ratemyprofessors.com](https://www.ratemyprofessors.com)
-- **Type of Source:** Primary source – a publicly available web platform.
-- **Relation to EduRate:** Competing program. Offers professor/course reviews.
-- **Description:**  
-  RateMyProfessors is a long-standing website where students anonymously post reviews about professors and courses from colleges and universities. Reviews include numeric ratings and open-ended comments, categorized by helpfulness, clarity, and easiness.
-- **Feature Analysis:**  
-  While RateMyProfessors is popular, it suffers from major issues EduRate aims to solve—unmoderated, subjective comments can lead to bias, defamation, or offensive content. Its open-ended review format allows for hate speech or irrelevant feedback. EduRate improves on this by replacing open text with structured surveys and auto-generated, impartial reviews.
+### **Programming Languages**
 
---- 
+1. **JavaScript (Node.js + React)**  
+   - Widely supported, especially in web development.
+   - Large ecosystem of libraries and frameworks.
+   - I can use Java script for both the client side (react) and the server side (node.js) this allows me limit the learning curve I will be taking on during my time working on the project.
 
-### 2. Niche College Reviews
+2. **Python (with Flask)**  
+   - Great for back-end development and data processing.
+   - Simple syntax and strong support for machine learning, useful for generating automated reviews.
+   - Flask makes it easy to build RESTful API's 
+   - Has several examples published online which will make it easy to find tutorials for things such as Flask + React.
 
-- **Link:** [https://www.niche.com/colleges/search/best-professors](https://www.niche.com/colleges/search/best-professors)
-- **Type of Source:** Secondary – aggregated college review site.
-- **Relation to EduRate:** Competing or comparable system.
-- **Description:**  
-  Niche aggregates user reviews, rankings, and data about colleges, professors, and student life. The data is collected through surveys and optional open-text reviews.
-- **Feature Analysis:**  
-  Niche’s structured survey approach aligns with EduRate's idea, but it still allows free-text responses. EduRate would eliminate open-text feedback entirely, using only structured, survey-based ratings to generate reviews—improving neutrality and reducing toxicity.
+3. **Comparison**  
+   - JavaScript (React) is better for building interactive frontends.
+   - Python is better suited for processing survey data and generating summaries.
 
---- 
+### **Why This Stack?**
+EduRate will likely use **React** for the front-end and **Flask** (Python) for the back-end due to Flask's lightweight design and React's rich UI capabilities.
 
-### 3. Glassdoor
+---
 
-- **Link:** [https://www.glassdoor.com](https://www.glassdoor.com)
-- **Type of Source:** Secondary – workplace review site.
-- **Relation to EduRate:** Inspirational model for structured feedback.
-- **Description:**  
-  Glassdoor lets employees rate their workplaces and provide feedback on company culture, management, pay, etc. It includes structured ratings and optional anonymous reviews.
-- **Feature Analysis:**  
-  Glassdoor demonstrates the value of anonymous, structured input in a feedback system. Like EduRate, it aims to help users make informed decisions. However, it still permits text feedback that can be biased. EduRate eliminates this risk through automated summaries.
+## **Key Features**
+
+- **Survey-Based Feedback**  
+  Students rate courses and professors using multiple-choice and scaled questions instead of open-ended reviews.
+
+- **Auto-Generated Summaries**  
+  Survey results are aggregated and summarized using natural language templates or AI-powered text generation.
+
+- **Upvoting System**  
+  Students can upvote helpful reviews, surfacing the most credible summaries.
+
+- **Hate Speech Prevention**  
+  By removing open text input, EduRate reduces the chance of toxic or defamatory content.
+
+- **Search and Filter Tools**  
+  Allows students to browse and filter professors and courses by department, difficulty, workload, and more.
+
+---
+
+## **Comparison to Existing Solutions**
+
+### 1. **RateMyProfessors**  
+- **Link:** [https://www.ratemyprofessors.com](https://www.ratemyprofessors.com)  
+- **Type of Source:** Primary source – publicly available web platform  
+- **Relation to EduRate:** Competing program  
+
+**Description:**  
+RateMyProfessors allows anonymous reviews of professors using numerical ratings and free-text comments. It includes ratings for helpfulness, clarity, and easiness.
+
+**Feature Discussion:**  
+While popular, RateMyProfessors suffers from unfiltered and sometimes abusive content. EduRate improves on this by enforcing structured input, eliminating subjective narratives, and using automatic summaries for fairness.
+
+---
+
+### 2. **Niche College Reviews**  
+- **Link:** [https://www.niche.com/colleges/search/best-professors](https://www.niche.com/colleges/search/best-professors)  
+- **Type of Source:** Secondary source – review aggregator  
+- **Relation to EduRate:** Comparable platform  
+
+**Description:**  
+Niche compiles user-generated ratings about colleges, professors, and academic life. It uses a mix of quantitative surveys and optional written reviews.
+
+**Feature Discussion:**  
+Niche supports structured data but still allows free-text submissions. EduRate goes further by entirely removing open-ended feedback, focusing on unbiased summaries and reducing toxicity.
+
+---
+
+### 3. **Glassdoor**  
+- **Link:** [https://www.glassdoor.com](https://www.glassdoor.com)  
+- **Type of Source:** Secondary source – workplace review site  
+- **Relation to EduRate:** Inspirational model for anonymous, structured feedback  
+
+**Description:**  
+Glassdoor collects employee reviews about workplaces, salaries, and management using structured questions and optional comments.
+
+**Feature Discussion:**  
+Glassdoor’s structure helps users make informed job decisions, but it still faces bias in user comments. EduRate adopts its structured approach but replaces subjective comments with auto-generated reviews from aggregated data.
+
+---
+
+### 4. **Coursicle**  
+- **Link:** [https://www.coursicle.com](https://www.coursicle.com)  
+- **Type of Source:** Primary source – course scheduling tool  
+- **Relation to EduRate:** Complementary app  
+
+**Description:**  
+Coursicle helps students plan class schedules and notifies them when seats open. It includes some basic course ratings.
+
+**Feature Discussion:**  
+While helpful for registration, Coursicle lacks deep course/professor feedback. EduRate enhances this space with in-depth, structured, and unbiased course reviews.
+
+---
+
+## **References**
+
+[1] RateMyProfessors, “Rate My Professors,” [Online]. Available: https://www.ratemyprofessors.com  
+[2] Niche, “Best Professors Ranking,” [Online]. Available: https://www.niche.com/colleges/search/best-professors  
+[3] Glassdoor, “Company Reviews,” [Online]. Available: https://www.glassdoor.com  
+[4] Coursicle, “Class Scheduling Made Easy,” [Online]. Available: https://www.coursicle.com
 
 ---
