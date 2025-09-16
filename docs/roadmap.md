@@ -17,23 +17,21 @@ EduRate will be developed as a **Web Application**, allowing easy access across 
 
 ### **Programming Languages**
 
-1. **JavaScript (Node.js + React)**  
-   - Widely supported, especially in web development.
-   - Large ecosystem of libraries and frameworks.
-   - I can use Java script for both the client side (react) and the server side (node.js) this allows me limit the learning curve I will be taking on during my time working on the project.
+| Layer         | Technology              | Purpose |
+|---------------|--------------------------|---------|
+| **Frontend**  | **React.js**             | Build dynamic, component-based user interfaces such as survey forms, course pages, and filterable lists. |
+| **Backend**   | **Node.js + Express.js** | Handle API routing, business logic, and communication between frontend and database. Express provides a lightweight, flexible framework for creating RESTful APIs. |
+| **Database**  | **PostgreSQL**           | Store structured, relational data such as courses, professors, survey responses, and aggregated results. Ideal for managing complex relationships and performing analytical queries. |
 
-2. **Python (with Flask)**  
-   - Great for back-end development and data processing.
-   - Simple syntax and strong support for machine learning, useful for generating automated reviews.
-   - Flask makes it easy to build RESTful API's 
-   - Has several examples published online which will make it easy to find tutorials for things such as Flask + React.
-
-3. **Comparison**  
-   - JavaScript (React) is better for building interactive frontends.
-   - Python is better suited for processing survey data and generating summaries.
+---
 
 ### **Why This Stack?**
-EduRate will likely use **React** for the front-end and **Flask** (Python) for the back-end due to Flask's lightweight design and React's rich UI capabilities.
+- **React** enables the creation of a fast and responsive user interface, with reusable components and easy state management.
+- **Node.js** allows JavaScript to be used on both the client and server sides, minimizing context switching and reducing the overall learning curve.
+- **Express.js** simplifies the process of building a secure and scalable backend API with clear routing and middleware support.
+- **PostgreSQL** is a robust, open-source relational database system, ideal for structured data, relationships (e.g., between courses and professors), and advanced filtering or aggregation needs.
+
+Together, these tools allow for **efficient full-stack development**, offering both performance and flexibility while remaining beginner-friendly and highly supported by online resources.
 
 ---
 
