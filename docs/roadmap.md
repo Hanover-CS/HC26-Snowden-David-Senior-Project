@@ -26,21 +26,37 @@ EduRate will be developed as a **Web Application**, allowing easy access across 
 ---
 
 ### **Why This Stack?**
+
 - **Why React?** 
+  
   I selected react for its component-based architecture, large community, and wide range of UI libraries. This makes react optimal to build interactive, form-driven interfaces like surveys, search filters, and data summaries which will be the driving force for users to cleary understand and use EduRate. I choose to host the frontend of my project on Vercel becuase of the easy one click deployment from github(CI/CD built in), the minmial complexity of set up and usage, and the optimized features vercel provides for react apps.
+
 - **Alterative to React** 
+  
   **Vue.js** Vue offered a lightweight and easy to use alternative to React although it did not offer the large ecosystem that React provides such as extensive third party libraries and a large coonunity with lots of documentation making it easier to learn from others.
+
 - **Alterative to Vercel**
+  
   I considered **Netlify** to host my frontend becuase it also offers easy to use features for users and strong documentation but after reasearch I learned it was better suited for more static sites and Vercel's performance with React integration gave it the edge over Netlify.
+
 - **Why Node.js + Express?** 
+  
   Node.js enables JavaScript across the full stack, reducing the learning curve for me to switch bettween multiple languages. Express provides a minimalist framework that allows for fast API development, especially suited for RESTful interactions with survey data. I also choose to host my backend on Render given it provides a easy to deploy service so once I push to github my backend becomes live, it provides a free service, and render supports presistent storage if needed which helps my backend run continuously making it easier to handle on-going interations and database operations.
+
 - **Alterative to  Node.js + Express.js**
+  
   **Flask** was the strongest competitor given it is strong in data handling and rapid devlopment but using a different language than the frontend increases complexity and slows down full-stack development.
+
 - **Alterative to Render**
+  
   The most appealing alterative to Render was **Railway.app** given its full stack hosting and easy to use service but Renders documentation and free tier usage created the edge in my decision making process.
+
 - **Why Supabase(Managed PostgreSQL)** 
+  
   I choose Supabase because it offers a fully managed relational database with built-in features like authentication, real-time APIs, and an intuitive dashboard — all without the overhead of manual setup. Its support for structured, relational data makes it ideal for managing courses, professors, and survey responses in EduRate. 
+
 - **Alternatives to Supabase**
+  
   I looked into MongoDB Atlas as a possible alternative to Supabase which is a document-oriented system providing a flexible schema and lots of tools for devlopment. This option was edged out because it was not ideal for relational queries such as joining surveys to courses and professors and I found this method more complex then SQL.
 
 ---
