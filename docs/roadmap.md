@@ -1,3 +1,4 @@
+---
 title: "EduRate: A Web App for Fair Course Reviews"
 layout: default
 ---
