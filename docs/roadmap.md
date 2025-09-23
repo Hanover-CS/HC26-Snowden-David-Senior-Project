@@ -134,9 +134,51 @@ While helpful for registration, Coursicle lacks deep course/professor feedback. 
 
 ---
 
+### 5. **React Documentation**  
+- **Link:** [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)  
+- **Type of Source:** Technical documentation  
+- **Relation to EduRate:** Primary frontend framework  
+
+**Description:**  
+The official React documentation provides comprehensive guides, tutorials, and API references to help me get started with using React.
+
+**Feature Discussion:**  
+EduRate uses React to build an interactive survey system and responsive UI. The documentation is a key resource to implement best practices in component architecture and state management.
+
+--- 
+
+### 6. **Supabase Documentation**  
+- **Link:** [https://supabase.com/docs](https://supabase.com/docs)  
+- **Type of Source:** Technical documentation  
+- **Relation to EduRate:** Backend database and authentication provider  
+
+**Description:**  
+Supabase provides open-source tools to build apps with a PostgreSQL database, real-time subscriptions, and user authentication. The documentation includes setup guides, SQL syntax, API usage, and security practices.
+
+**Feature Discussion:**  
+EduRate relies on Supabase to manage structured relationships between students, courses, and survey responses. This documentation will help enable efficient schema designs and safe querying for analytics.
+
+---
+
+### 7. **Render Deployment Guides**  
+- **Link:** [https://render.com/docs](https://render.com/docs)  
+- **Type of Source:** Technical documentation  
+- **Relation to EduRate:** Backend deployment platform  
+
+**Description:**  
+Render's documentation outlines how to deploy and manage web services, background workers, and persistent environments with CI/CD integration.
+
+**Feature Discussion:**  
+EduRate's backend is deployed on Render for scalability and simplicity. The docs support continuous deployment workflows and allow the backend to reliably serve APIs to the frontend and database.
+
+---
+
 ## **References**
 
 [1] RateMyProfessors, “Rate My Professors,” [Online]. Available: https://www.ratemyprofessors.com  
 [2] Niche, “Best Professors Ranking,” [Online]. Available: https://www.niche.com/colleges/search/best-professors  
 [3] Glassdoor, “Company Reviews,” [Online]. Available: https://www.glassdoor.com  
-[4] Coursicle, “Class Scheduling Made Easy,” [Online]. Available: https://www.coursicle.com
+[4] Coursicle, “Class Scheduling Made Easy,” [Online]. Available: https://www.coursicle.com  
+[5] ReactJS, “React Documentation,” [Online]. Available: https://reactjs.org/docs/getting-started.html  
+[6] Supabase, “Supabase Docs,” [Online]. Available: https://supabase.com/docs  
+[7] Render, “Render Deployment Guides,” [Online]. Available: https://render.com/docs
