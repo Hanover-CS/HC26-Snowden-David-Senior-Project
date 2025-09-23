@@ -25,6 +25,10 @@ EduRate will be developed as a **Web Application**, allowing easy access across 
 
 ---
 
+## **UI display idea** 
+
+![alt text](image.png)
+
 ### **Why This Stack?**
 
 - **Why React?**  
@@ -60,6 +64,15 @@ EduRate will be developed as a **Web Application**, allowing easy access across 
   I looked into MongoDB Atlas as a possible alternative to Supabase, which is a document-oriented system providing a flexible schema and lots of tools for development. This option was edged out because it was not ideal for relational queries such as joining surveys to courses and professors, and I found this method more complex than SQL.
 
 ---
+
+## **Package/Dependency Management**
+
+EduRate will use **npm (Node Package Manager)** to manage both frontend and backend dependencies.
+
+- On the **frontend**, npm will handle React libraries, routing, form validation tools, and UI components.
+- On the **backend**, npm will manage Express middleware, PostgreSQL clients, authentication tools, and API helpers.
+
+While **Yarn** was considered for its performance advantages, **npm** was selected due to its tighter integration with Vercel and Render, along with its strong ecosystem support and simplicity for full-stack JavaScript development.
 
 ## **Key Features**
 
