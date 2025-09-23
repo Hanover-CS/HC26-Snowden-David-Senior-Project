@@ -25,10 +25,6 @@ EduRate will be developed as a **Web Application**, allowing easy access across 
 
 ---
 
-## **UI display idea** 
-
-![alt text](image.png)
-
 ### **Why This Stack?**
 
 - **Why React?**  
@@ -74,6 +70,8 @@ EduRate will use **npm (Node Package Manager)** to manage both frontend and back
 
 While **Yarn** was considered for its performance advantages, **npm** was selected due to its tighter integration with Vercel and Render, along with its strong ecosystem support and simplicity for full-stack JavaScript development.
 
+---
+
 ## **Key Features**
 
 - **Survey-Based Feedback**  
@@ -90,6 +88,14 @@ While **Yarn** was considered for its performance advantages, **npm** was select
 
 - **Search and Filter Tools**  
   Allows students to browse and filter professors and courses by department, difficulty, workload, and more.
+
+---
+
+## **UI Display Idea** 
+
+![alt text](image.png) 
+
+- This image is a great example of some key features I would like to include such as a search bar for the course or professor and the rating scale. 
 
 ---
 
