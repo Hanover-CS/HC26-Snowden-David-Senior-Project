@@ -27,7 +27,7 @@ EduRate will be developed as a **Web Application**, allowing easy access across 
 
 ### **Why This Stack?**
 
-- **Why React?**  
+- **Why React hosted on Vercel?**  
 
   I selected React for its component-based architecture, large community, and wide range of UI libraries. This makes React optimal to build interactive, form-driven interfaces like surveys, search filters, and data summaries, which will be the driving force for users to clearly understand and use EduRate. I chose to host the frontend of my project on Vercel because of the easy one-click deployment from GitHub (CI/CD built in), the minimal complexity of setup and usage, and the optimized features Vercel provides for React apps.
 
@@ -39,7 +39,7 @@ EduRate will be developed as a **Web Application**, allowing easy access across 
 
   I considered **Netlify** to host my frontend because it also offers easy-to-use features and strong documentation, but after research, I learned it was better suited for more static sites, and Vercel's performance with React integration gave it the edge over Netlify.
 
-- **Why Node.js + Express?**  
+- **Why Node.js + Express.js hosted on Render?**  
 
   Node.js enables JavaScript across the full stack, reducing the learning curve for me to switch between multiple languages. Express provides a minimalist framework that allows for fast API development, especially suited for RESTful interactions with survey data. I also chose to host my backend on Render given it provides an easy-to-deploy service, so once I push to GitHub, my backend becomes live. It provides a free service, and Render supports persistent storage if needed, which helps my backend run continuously, making it easier to handle ongoing interactions and database operations.
 
@@ -70,7 +70,7 @@ EduRate will use **npm (Node Package Manager)** to manage both frontend and back
 
 While **Yarn** was considered for its performance advantages, **npm** was selected due to its tighter integration with Vercel and Render, along with its strong ecosystem support and simplicity for full-stack JavaScript development.
 
-- I will also be using a **monorepo structure**. This will allow me to manage both the frontend and backend within the same repository, simplifying development and deployment. It will be divided internally into two subsections.
+- I will also be using a **monorepo structure**. This will allow me to manage both the frontend and backend within the same repository, simplifying development and deployment. It will be divided internally into two subsections .
 
 ---
 
