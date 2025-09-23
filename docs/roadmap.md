@@ -68,7 +68,7 @@ EduRate will use **npm (Node Package Manager)** to manage both frontend and back
 - On the **frontend**, npm will handle React libraries, routing, form validation tools, and UI components.
 - On the **backend**, npm will manage Express middleware, PostgreSQL clients, authentication tools, and API helpers.
 
-While **Yarn** was considered for its performance advantages, **npm** was selected due to its tighter integration with Vercel and Render, along with its strong ecosystem support and simplicity for full-stack JavaScript development.
+- While **Yarn** was considered for its performance advantages, **npm** was selected due to its tighter integration with Vercel and Render, along with its strong ecosystem support and simplicity for full-stack JavaScript development.
 
 - I will also be using a **monorepo structure**. This will allow me to manage both the frontend and backend within the same repository, simplifying development and deployment. It will be divided internally into two subsections .
 
