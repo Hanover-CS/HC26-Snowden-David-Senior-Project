@@ -1,8 +1,14 @@
 import express from "express";
+import cors from "cors";
 import { createClient } from "@supabase/supabase-js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Enable CORS for your frontend
+app.use(cors({
+  origin: "https://hc-26-snowden-david-senior-project-t888mb5ul.vercel.app", // replace with your actual Vercel URL
+}));
 
 // Supabase client using environment variables
 const supabase = createClient(
