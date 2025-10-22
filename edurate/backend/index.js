@@ -37,6 +37,17 @@ app.get("/test-db", async (req, res) => {
   }
 });
 
+// Ping Supabase route for testing connection
+app.get("/ping-supabase", async (req, res) => {
+  try {
+    const { data, error } = await supabase.from("courses").select("*").limit(1);
+    if (error) throw error;
+    res.json({ status: "success", data });
+  } catch (err) {
+    res.status(500).json({ status: "failed", message: err.message });
+  }
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
