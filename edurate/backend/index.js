@@ -18,6 +18,8 @@ const supabase = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_KEY
 );
+console.log("Supabase URL:", process.env.SUPABASE_URL);
+console.log("Supabase Key present?", !!process.env.SUPABASE_KEY);
 
 // Root route
 app.get("/", (req, res) => {
