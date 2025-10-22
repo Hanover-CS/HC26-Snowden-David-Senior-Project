@@ -8,49 +8,34 @@ import { createClient } from "@supabase/supabase-js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Enable CORS for all origins (or restrict to your frontend URL)
-app.use(cors());
-// If you want to restrict to Vercel frontend, use:
-// app.use(cors({ origin: 'https://hc-26-snowden-david-senior-project.vercel.app' }));
+app.use(cors()); // allow all origins temporarily
 
-// Supabase client using environment variables
+// Debug log to confirm env variables are read
+console.log("Supabase URL:", process.env.SUPABASE_URL);
+console.log("Supabase Key length:", process.env.SUPABASE_KEY?.length);
+
 const supabase = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_KEY
 );
-console.log("Supabase URL:", process.env.SUPABASE_URL);
-console.log("Supabase Key present?", !!process.env.SUPABASE_KEY);
 
 // Root route
 app.get("/", (req, res) => {
   res.send("Hello from EduRate backend!");
 });
 
-// Test DB route
-app.get("/test-db", async (req, res) => {
-  try {
-    const { data, error } = await supabase.from("courses").select("*");
-    if (error) {
-      return res.status(500).json({ data: null, error });
-    }
-    res.json({ data, error: null });
-  } catch (err) {
-    res.status(500).json({ data: null, error: { message: err.message } });
-  }
-});
-
-// Ping Supabase route for testing connection
+// Ping Supabase
 app.get("/ping-supabase", async (req, res) => {
   try {
     const { data, error } = await supabase.from("courses").select("*").limit(1);
     if (error) throw error;
     res.json({ status: "success", data });
   } catch (err) {
+    console.error("Ping Supabase failed:", err.message);
     res.status(500).json({ status: "failed", message: err.message });
   }
 });
 
-// Start server
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
 });
