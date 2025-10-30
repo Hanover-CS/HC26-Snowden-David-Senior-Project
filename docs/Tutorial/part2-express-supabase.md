@@ -1,6 +1,6 @@
 # Part 2: Express Server and Supabase Connection
 
-[← Part 1: Setup](part1-setup.md) | [Back to Index](index.md) | [Part 3: CRUD Operations →](part3-crud-operations.md)
+[← Part 1: Setup](part1-setup.md) | [Back to Index](index.md) | [Part 3: CRUD Operations →](part3-testing-nextsteps.md)
 
 ---
 
@@ -487,8 +487,9 @@ In this section, you:
 - ✅ Built a test endpoint to verify the connection
 - ✅ Learned troubleshooting techniques for common issues
 
-**Next:** You'll implement complete CRUD operations to create, read, update, and delete courses through your API.
+**Next:** You'll implement testing and learn about what next steps you can take after 
+completing this tutorial!
 
 ---
 
-[← Part 1: Setup](part1-setup.md) | [Back to Index](index.md) | [Part 3: CRUD Operations →](part3-crud-operations.md)
+[← Part 1: Setup](part1-setup.md) | [Back to Index](index.md) | [Part 3: Testing and next steps →](part3-testing-nextsteps.md)

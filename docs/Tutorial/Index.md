@@ -17,9 +17,8 @@ By the end of this tutorial, you will be able to:
 
 1. Set up an Express.js server with proper project structure
 2. Connect Express.js to a Supabase PostgreSQL database
-3. Implement CRUD (Create, Read, Update, Delete) operations using the Supabase client
-4. Handle environment variables securely for local and production environments
-5. Deploy your Express + Supabase backend
+3. Handle environment variables securely for local and production environments
+4. Deploy your Express + Supabase backend
 6. Debug common connection issues between Express and Supabase
 
 ---
@@ -70,7 +69,7 @@ If any command fails, install the missing software using the links above.
 
 ## Tutorial Structure
 
-This tutorial is divided into six progressive sections:
+This tutorial is divided into three progressive sections:
 
 ### [Part 1: Project Setup and Installation](part1-setup.md)
 Learn how to initialize a Node.js project, install dependencies, and configure your development environment.
@@ -79,40 +78,20 @@ Learn how to initialize a Node.js project, install dependencies, and configure y
 
 ---
 
-### [Part 2: Creating Your Express Server](part2-express-server.md)
+### [Part 2: Creating Your Express Server](part2-express-supabase.md)
 Build a basic Express.js server with routing and middleware, and understand the core concepts of Express applications.
 
 **Time estimate:** 20 minutes
 
 ---
 
-### [Part 3: Connecting to Supabase](part3-supabase-connection.md)
+### [Part 3: Testing and next steps](part3-testing-nextsteps.md)
 Set up a Supabase project, create a database table, and establish a connection from your Express server to Supabase.
 
 **Time estimate:** 25 minutes
 
 ---
 
-### [Part 4: Building CRUD API Endpoints](part4-crud-operations.md)
-Implement complete Create, Read, Update, and Delete operations for your database using RESTful API design patterns.
-
-**Time estimate:** 30 minutes
-
----
-
-### [Part 5: Testing and Debugging](part5-testing-debugging.md)
-Learn how to test your API endpoints, debug common issues, and use tools like Postman and curl for API testing.
-
-**Time estimate:** 20 minutes
-
----
-
-### [Part 6: Deployment to Production](part6-deployment.md)
-Deploy your Express + Supabase backend to Render, configure production environment variables, and connect a frontend application.
-
-**Time estimate:** 25 minutes
-
----
 
 ## What You'll Build
 
