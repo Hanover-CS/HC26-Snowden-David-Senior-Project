@@ -5,7 +5,7 @@ layout: default
 
 # Part 1: Project Setup and Installation
 
-[← Back to Index](index.md) | [Part 2: Express Server →](part2-express-supabase.md)
+[← Back to Index](Index.md) | [Part 2: Express Server →](part2-express-supabase.md)
 
 ---
 
@@ -164,6 +164,6 @@ See [Git documentation on .gitignore](https://git-scm.com/docs/gitignore) for mo
 ---
 ## Next Up!
 
-[← Back to Index](index.md) | [Part 2: Express & Supabase →](part2-express-supabase.md)
+[← Back to Index](Index.md) | [Part 2: Express & Supabase →](part2-express-supabase.md)
 
 ---

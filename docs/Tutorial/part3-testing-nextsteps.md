@@ -5,7 +5,7 @@ layout: default
 
 # Part 3: Testing and Next Steps
 
-[← Part 2: Express & Supabase](part2-express-supabase.md) | [Back to Index](index.md)
+[← Part 2: Express & Supabase](part2-express-supabase.md) | [Back to Index](Index.md)
 
 ---
 
@@ -633,4 +633,4 @@ Ideas for projects using this integration:
 
 ---
 
-[← Part 2: Express & Supabase](part2-express-supabase.md) | [Back to Index](index.md)
+[← Part 2: Express & Supabase](part2-express-supabase.md) | [Back to Index](Index.md)

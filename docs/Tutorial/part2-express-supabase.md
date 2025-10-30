@@ -4,7 +4,7 @@ layout: default
 ---
 # Part 2: Express Server and Supabase Connection
 
-[← Part 1: Setup](part1-setup.md) | [Back to Index](index.md) | [Part 3: Testing and next steps →](part3-testing-nextsteps.md)
+[← Part 1: Setup](part1-setup.md) | [Back to Index](Index.md) | [Part 3: Testing and next steps →](part3-testing-nextsteps.md)
 
 ---
 
@@ -496,4 +496,4 @@ completing this tutorial!
 
 ---
 
-[← Part 1: Setup](part1-setup.md) | [Back to Index](index.md) | [Part 3: Testing and next steps →](part3-testing-nextsteps.md)
+[← Part 1: Setup](part1-setup.md) | [Back to Index](Index.md) | [Part 3: Testing and next steps →](part3-testing-nextsteps.md)
