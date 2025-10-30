@@ -1,3 +1,8 @@
+---
+title: "Tutorial Part 3: Testing and Next Steps"
+layout: default
+---
+
 # Part 3: Testing and Next Steps
 
 [← Part 2: Express & Supabase](part2-express-supabase.md) | [Back to Index](index.md)
