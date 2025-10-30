@@ -5,7 +5,7 @@ layout: default
 
 # Part 1: Project Setup and Installation
 
-[← Back to Index](index.md) | [Part 2: Express Server →](part2-express-server.md)
+[← Back to Index](index.md) | [Part 2: Express Server →](part2-express-supabase.md)
 
 ---
 
@@ -160,5 +160,10 @@ echo "node_modules/
 **Why this matters:** The `.env` file contains sensitive API keys that should **never** be committed to GitHub. The `.gitignore` file ensures this.
 
 See [Git documentation on .gitignore](https://git-scm.com/docs/gitignore) for more patterns.
+
+---
+## Next Up!
+
+[← Back to Index](index.md) | [Part 2: Express & Supabase →](part2-express-supabase.md)
 
 ---
