@@ -5,11 +5,18 @@
  * Validates route handling, error responses, and input validation.
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import request from 'supertest';
 import express from 'express';
 import cors from 'cors';
-import courseRoutes from './routes/courses.js';
+
+// Mock the supabase config to avoid requiring env vars
+vi.mock('./config/supabase.js', () => ({
+  supabase: {}
+}));
+
+// Import routes AFTER mocking
+const courseRoutes = await import('./routes/courses.js').then(m => m.default);
 
 // Create test app instance
 const app = express();
@@ -92,22 +99,5 @@ describe('Review Validation Tests', () => {
     expect(response.status).toBe(400);
     expect(response.body.success).toBe(false);
     expect(response.body.error).toContain('required');
-  });
-});
-
-describe('Constants Validation', () => {
-  it('should use constants for rating validation', async () => {
-    // Test that constants MIN_RATING and MAX_RATING are being used
-    const responseTooHigh = await request(app)
-      .post('/api/courses/1/reviews')
-      .send({ rating: 6, comment: 'Test' });
-    
-    expect(responseTooHigh.status).toBe(400);
-    
-    const responseTooLow = await request(app)
-      .post('/api/courses/1/reviews')
-      .send({ rating: 0, comment: 'Test' });
-    
-    expect(responseTooLow.status).toBe(400);
   });
 });

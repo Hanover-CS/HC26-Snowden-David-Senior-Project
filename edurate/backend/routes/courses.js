@@ -133,24 +133,40 @@ router.post('/:id/reviews', async (req, res) => {
   try {
     const { id } = req.params;
     const { rating, comment, student_name } = req.body;
-    
+
     console.log("📍 Submitting review for course ID:", id);
-    
-    // Validation
-    if (!rating || !comment) {
-      return res.status(HTTP_STATUS.BAD_REQUEST).json({ 
-        success: false, 
-        error: "Rating and comment are required" 
+
+    // ----------------------------
+    // 🔥 FIXED VALIDATION LOGIC
+    // ----------------------------
+
+    // Rating must exist (0 is NOT treated as missing)
+    if (rating === undefined || rating === null) {
+      return res.status(HTTP_STATUS.BAD_REQUEST).json({
+        success: false,
+        error: "Rating and comment are required"
       });
     }
-    
-    if (rating < MIN_RATING || rating > MAX_RATING) {
-      return res.status(HTTP_STATUS.BAD_REQUEST).json({ 
-        success: false, 
-        error: `Rating must be between ${MIN_RATING} and ${MAX_RATING}` 
+
+    // Rating must be between MIN_RATING and MAX_RATING
+    if (typeof rating !== "number" || rating < MIN_RATING || rating > MAX_RATING) {
+      return res.status(HTTP_STATUS.BAD_REQUEST).json({
+        success: false,
+        error: `Rating must be between ${MIN_RATING} and ${MAX_RATING}`
       });
     }
-    
+
+    // Comment must exist and not be empty
+    if (!comment || comment.trim() === "") {
+      return res.status(HTTP_STATUS.BAD_REQUEST).json({
+        success: false,
+        error: "Rating and comment are required"
+      });
+    }
+
+    // ----------------------------
+    // Insert review
+    // ----------------------------
     const { data, error } = await supabase
       .from("reviews")
       .insert([{ 
@@ -165,19 +181,20 @@ router.post('/:id/reviews', async (req, res) => {
       console.error("❌ Review insert error:", error);
       throw error;
     }
-    
+
     console.log("✅ Review submitted successfully");
-    
-    res.status(HTTP_STATUS.CREATED).json({ 
-      success: true, 
+
+    res.status(HTTP_STATUS.CREATED).json({
+      success: true,
       message: "Review submitted successfully",
       data: data[0]
     });
+
   } catch (err) {
     console.error("💥 Error in POST /api/courses/:id/reviews:", err.message);
-    res.status(HTTP_STATUS.BAD_REQUEST).json({ 
-      success: false, 
-      error: err.message 
+    res.status(HTTP_STATUS.BAD_REQUEST).json({
+      success: false,
+      error: err.message
     });
   }
 });
